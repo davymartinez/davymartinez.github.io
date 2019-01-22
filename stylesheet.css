@@ -1,12 +1,12 @@
-/* Color palette: "Tech light" [https://www.colourlovers.com/palette/15/tech_light] */
+/* Color palette: "japan9" [https://www.colourlovers.com/palette/765305/japan9] */
 
 body {
-  color: #FFFFFF;
-  background-color: #000000;
+  color: #C8D6BF;
+  background-color: #1A1F1E;
 }
 
 a {
-  color: #4DBCE9;
+  color: #E3DFBA;
 }
 
 p {
@@ -25,7 +25,7 @@ hr {
   align-content: center;
   top: 0px;
   width: 100%;
-  background-color: #D1E751;
+  background-color: #6CBDB5;
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: bold;
 }
@@ -57,7 +57,7 @@ header {
 
 header h1 {
   font-family: 'Source Code Pro', monospace;
-  color: #26ADE4;
+  color: #93CCC6;
   font-size: 48px;
   text-align: left;
 }
@@ -65,14 +65,14 @@ header h1 {
 #about h2, #projects h2, #contact h2 {
   font-family: 'Source Code Pro', monospace;
   font-size: 30px;;
-  color: #26ADE4;
+  color: #93CCC6;
 }
 
 header h2 {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 30px;
   text-align: right;
-  color: #4DBCE9
+  color: #6CBDB5
 }
 
 #welcome-section {
@@ -99,7 +99,7 @@ header h2 {
 }
 
 #skills p {
-  color: #E0EFF1;
+  color: #E3DFBA;
   margin-bottom: 10px;
   font-size: 18px;
   font-weight: bold;
@@ -124,7 +124,7 @@ header h2 {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   grid-template-areas: ". ." ". .";
-  gap: 16px 8px;
+  gap: 48px 96px;
   justify-content: space-evenly;
   align-items: center;
   align-content: center;
@@ -149,6 +149,9 @@ header h2 {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  border-style: solid;
+  border-color: #E3DFBA;
+  border-radius: 18px;
 }
 
 @media screen and (max-width: 667px) {
