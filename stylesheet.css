@@ -15,7 +15,7 @@ p {
 }
 
 hr {
-  color: #7DB4B5;
+  color: #6CBDB5;
 }
 
 #navbar {
@@ -37,6 +37,15 @@ hr {
 #navbar li {
   display: inline;
   margin: 8em;
+  padding: 1em;
+}
+
+#navbar li:hover {
+  background-color: #93CCC6;
+}
+
+#navbar li a:hover {
+  color: #FFFFFF;
 }
 
 @media screen and (max-width: 800px) {
