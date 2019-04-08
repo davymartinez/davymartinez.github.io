@@ -23,7 +23,8 @@ author:
   name: David Martinez
   twitter: OnlyApo
   picture: /assets/images/portfolio-headshot-square-cropped_300x300.png
-twitter_username: OnlyApo
+image: /assets/images/portfolio-headshot-square-cropped_300x300.png
+  twitter_username: OnlyApo
 github_username: davymartinez
 logo: /assets/images/portfolio-headshot-square-cropped_150x150.png
 search: # true, false (default)
