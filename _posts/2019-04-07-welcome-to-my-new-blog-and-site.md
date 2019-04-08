@@ -17,7 +17,9 @@ Therefore, I want the website to serve as a showcase for whatever I get to build
 
 To begin, I'll let you know I built this website using [Jekyll](https://jekyllrb.com/) as a static site generator and [GitHub Pages](https://pages.github.com/) for hosting. On later posts I'll expand on how to use them both to create your own website.
 
-Also, being a native Spanish speaker and a technical translator on my spare time, I want to have this website in both Spanish and English, so I'll be adding localized versions of all the pages and posts, eventually.
+Also, the theme you're seeing here is the wonderful ["Basically Basic"](https://github.com/mmistakes/jekyll-theme-basically-basic) by Michael Rose, a designer that goes by the alias of [Minimal Mistakes](https://github.com/mmistakes). He creates truly amazing designs and themes, which you can check on his [GitHub repository](https://github.com/mmistakes?tab=repositories).
+
+By the way, being a native Spanish speaker and a technical translator on my spare time, I want to have this website in both Spanish and English, so I'll be adding localized versions of all the pages and posts, eventually.
 
 I feel there's a lack of Spanish language resources for aspiring devs (at least compared to English ones), so I want to contribute to the community by making learning more accessible for budding coders from Spanish-speaking countries.
 
