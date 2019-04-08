@@ -1,0 +1,189 @@
+{
+    "basics": {
+        "name": "David Martinez",
+        "label": "A life-long learner & self-taught aspiring WebDev",
+        "picture": "",
+        "email": "davy.martinez@gmail.com",
+        "phone": "+54 (911) 6214 3182",
+        "website": "https://davymartinez.com",
+        "summary": "David wants to know about everything. He loves tech, the web, and music. He currently works as a music metadata editorial specialist for world-class entertainment technology and data company. His current interest and learning focus is Front-End Web Development.",
+        "location": {
+            "address": "Padilla 752 17-E",
+            "postalCode": "1414",
+            "city": "Buenos Aires",
+            "countryCode": "AR",
+            "region": "Capital Federal"
+        },
+        "profiles": [{
+                "network": "Twitter",
+                "username": "OnlyApo",
+                "url": "https://twitter.com/OnlyApo"
+            },
+            {
+                "network": "LinkedIn",
+                "username": "David Martinez",
+                "url": "https://linkedin.com/in/davidmartinezgarcia/"
+            },
+            {
+                "network": "GitHub",
+                "username": "davymartinez",
+                "url": "https://github.com/davymartinez/"
+            }
+        ]
+    },
+    "work": [{
+        "company": "Gracenote (A Nielsen company)",
+        "position": "Editorial Research Specialist, LatAm Music",
+        "website": "https://wwww.gracenote.com",
+        "startDate": "2017-05-15",
+        "endDate": "",
+        "summary": "In charge of creating, reviewing, and correcting music-related data elements according to established standards and practices, ensuring album and artist metadata are of highest quality.",
+        "highlights": [
+            "Made significant contributions to the Global Music Database, providing up-to-date discography metadata for more than 200 important Latin American artists",
+            "Created and/or updated genre, language, origin, era, and type metadata for over 1,000 Latin American artists",
+            "Added important current and historically important genres to the Genre Database for increased stylistic coverage",
+            "Led the local chapter of the N-Gen diversity and inclusion initiative"
+        ]
+    },
+    {
+        "company": "Self-employed",
+        "position": "Freelance Content Creator & Copywriter",
+        "website": "",
+        "startDate": "2017-03-01",
+        "endDate": "2018-05-16",
+        "summary": "Content writing, topic research, copywriting, text reviewing and editing, content strategies and editorial calendars. Worked on the Content Test Project for Perengo.com.",
+        "highlights": [
+            "Contributed to the launch of the Perengo blog, researching and writing on topics of programmatic advertising and recruitment technology"
+        ]
+    },
+    {
+        "company": "Uakami Studio",
+        "position": "Associate Content Manager & Copywriter",
+        "website": "https://uakami.com",
+        "startDate": "2014-12-15",
+        "endDate": "2017-01-15",
+        "summary": "Creating and managing content for website projects, including content creation, topic research, copywriting, copy editing, audience targeting, content strategies, editorial calendars, and more.",
+        "highlights": [
+            "Devised content strategies for five important website projects, including real estate developers, retail technology suppliers, and IT consulting firms, among others",
+            "Created and transcreated bilingual copy for websites targeted to both Spanish and English-speaking audiences",
+            "Created the whole blog content strategy and a series of posts for a website specialized in landing pages"
+        ]
+    },
+    {
+        "company": "Self-employed",
+        "position": "Freelance English-Spanish Translator",
+        "website": "",
+        "startDate": "2014-02-01",
+        "endDate": "",
+        "summary": "English to Spanish translations for websites and printed content, having worked for companies and institutions such as Negotiations.com, Children's Health Market, Process Instruments, Gengo.com, Uakami and The European Journalism Centre (EJC)",
+        "highlights": [
+            "Hold a current Gengo.com Quality Scorecard rating of 9.1/10",
+            "Completed over 14,500 translation jobs comprising about 324,000 units, to date"
+        ]
+    },
+    {
+        "company": "Eco FM 92.1",
+        "position": "Radio Show Host & Music Curator",
+        "website": "http://www.ecofm.ml",
+        "startDate": "2013-10-01",
+        "endDate": "2016-12-24",
+        "summary": "Host, producer and music curator for the alternative music radio show La Caja de Ritmos, broadcast from Mondays to Fridays. Also in charge of voice-over work and creative copywriting for ad spots.",
+        "highlights": [
+            "Gained a cult following broadcasting alternative, low airplay music, exposing audiences to other genres away from mainstream radio"
+        ]
+    },
+    {
+        "company": "Weatherford",
+        "position": "Sales & Applications Representative",
+        "website": "https://www.weatherford.com/en/products-and-services/production/",
+        "startDate": "2011-04-01",
+        "endDate": "2014-01-31",
+        "summary": "Commercial proposals and tenders for Eastern Venezuelan oilfield operators and joint ventures. Post-sales support for artificial lift systems & production optimization operations in Eastern Venezuela.",
+        "highlights": [
+            "Prepared successful sales proposals in excess of 1 million dollars",
+            "Got several tenders awarded representing hundreds of thousands of dollars in sales"
+        ]
+    },
+    {
+        "position": "Production Optimization Sales Support",
+        "website": "https://www.weatherford.com/en/products-and-services/production/",
+        "startDate": "2010-01-01",
+        "endDate": "2011-04-01",
+        "summary": "Technical & financial proposals for bids, inventory control, Flow Measurement product line focal point.",
+        "highlights": [
+            "Became the Flow Measurement product line focal point, introducing FM technologies to several oilfield operators",
+            "Installed the first set of near-infrared water-cut meters in Eastern Venezuela",
+            "Took part in the Red Eye Multiphase Metering System (REMMS) pilot test in Eastern Venezuela"
+        ]
+    },
+    {
+        "position": "Production Optimization Field Technician",
+        "website": "https://www.weatherford.com/en/products-and-services/production/",
+        "startDate": "2008-02-01",
+        "endDate": "2009-12-31",
+        "summary": "Installation, setup, and troubleshooting of oilfield production optimization equipment such as downhole pressure/temperature gauges, dataloggers, and variable frequency drives.",
+        "highlights": [
+            "Took part in the massive deployment and maintenance of pressure & temperature downhole gauges in several Orinoco Oil Belt oilfields"
+        ]
+    },
+    {
+        "position": "Technical Translator",
+        "website": "https://www.weatherford.com/en/products-and-services/production/",
+        "startDate": "2003-10-01",
+        "endDate": "2008-01-31",
+        "summary": "English to Spanish translation of technical, commercial and legal documentation.",
+        "highlights": [
+            "Translated technical documentation and user manuals for software and hardware products delivered to Latin American clients in Mexico, Colombia, Venezuela Ecuador, Bolivia, and Argentina"
+        ]
+    }],
+    "education": [{
+        "institution": "Universidad Nacional Abierta",
+        "area": "Systems",
+        "studyType": "Engineering"
+    }],
+    "skills": [{
+            "name": "Software development tools",
+            "keywords": [
+                "Visual Studio Code",
+                "GitHub",
+                "Eclipse IDE",
+                "NetBeans IDE",
+                "JIRA"
+            ]
+        },
+        {
+            "name": "Audio editing",
+            "keywords": [
+                "Adobe Audition",
+                "Audacity",
+                "Sound Forge"
+            ]
+        },
+        {
+            "name": "Content marketing",
+            "keywords": [
+                "WordPress",
+                "Yoast",
+                "Cornerstone",
+                "Google Adwords Editor"
+            ]
+        },
+        {
+            "name": "Productivity software",
+            "keywords": [
+                "Asana",
+                "Everhour",
+                "Workflowy",
+                "Slack"
+            ]
+        }
+    ],
+    "languages": [{
+        "language": "Spanish",
+        "fluency": "Native speaker"
+    },
+    {
+        "language": "English",
+        "fluency": "Advanced"
+    }]
+}
