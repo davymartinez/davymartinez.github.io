@@ -20,4 +20,8 @@ A few of my professional highlights include:
 * Practical experience in blogging and content marketing.
 * Currently, I work full-time as a metadata editor for the entertainment technology industry. My specialty: Latin American music!
 
+If you're interested in English-to-Spanish translation services:
+
+<a href="https://us.smartcat.ai/marketplace/user/david-martinez?utm_source=hireme&utm_medium=referral&utm_campaign=hireme-{SmartcatEmail}" target="_blank"><img src="https://portal-custom-assets.smartcat.ai/hire_me_via_smartcat_btn_light_theme.png" alt="" width="282" height="48"></a>
+
 You can always check the [CV section](cv.html), where I have included a detailed listing of my work experience in the past 20 years or so.
