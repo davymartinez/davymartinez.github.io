@@ -4,6 +4,21 @@ var store = [{
         "tags": ["content","welcome","personal"],
         "url": "http://localhost:4000/blog/2019/04/07/welcome-to-my-new-blog-and-site.html",
         "teaser":null},{
+        "title": "Draft Regular Expressions And Spinal Tap Case",
+        "excerpt":" ","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/2019/04/13/draft-regular-expressions-and-spinal-tap-case.html",
+        "teaser":null},{
+        "title": "Draft Custom Data Attributes In Html",
+        "excerpt":" ","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/2019/08/02/draft-custom-data-attributes-in-html.html",
+        "teaser":null},{
+        "title": "How to setup your own website using GitHub Pages, Jekyll, and Namecheap",
+        "excerpt":"Let’s make this quick’n’dirty. Kind of. What you’ll need: Your own domain, for which I recommend Namecheap. A GitHub account, to be able to use GitHub Pages to host your site. Jekyll, to generate and manage your static site. So far, so good. Let’s dive in a bit deeper. Getting...","categories": ["blog"],
+        "tags": ["how-to","github","github-pages","jekyll","namecheap"],
+        "url": "http://localhost:4000/blog/2019/08/10/draft-how-to-setup-a-blog-with-jekyll.html",
+        "teaser":null},{
         "title": "Personal Portfolio Page",
         "excerpt":"This was the first version of the website you’re seeing right now. It started as a freeCodeCamp project and it was actually the first iteration of www.davymartinez.com. It required using elements such as: A welcome section (whose height should be equal to the viewport’s height) A projects section Project tiles...","categories": [],
         "tags": [],
