@@ -18,7 +18,7 @@ A few of my professional highlights include:
 * Radio hosting and music curation for several alternative, pop & rock radio stations.
 * Over 10 years of experience in the oil industry, doing everything from technical translation, to field operations and technical sales. Most of this experience was within in the production optimization area.
 * Practical experience in blogging and content marketing.
-* Currently, I work full-time as a metadata editor for the entertainment technology industry. My specialty: Latin American music!
+* Currently, I work full-time as a Senior Music Metadata Editor for a leading entertainment data and technology company. My specialty: Latin American music!
 
 If you're interested in English-to-Spanish translation services:
 
