@@ -1,4 +1,197 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/atom.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2019-08-10T16:07:33-03:00</updated><id>http://localhost:4000/atom.xml</id><title type="html">David Martinez</title><subtitle>David Martinez's personal website</subtitle><author><name>David Martinez</name></author><entry><title type="html">Welcome to my new blog and site</title><link href="http://localhost:4000/blog/2019/04/07/welcome-to-my-new-blog-and-site.html" rel="alternate" type="text/html" title="Welcome to my new blog and site" /><published>2019-04-07T00:00:00-03:00</published><updated>2019-04-07T00:00:00-03:00</updated><id>http://localhost:4000/blog/2019/04/07/welcome-to-my-new-blog-and-site</id><content type="html" xml:base="http://localhost:4000/blog/2019/04/07/welcome-to-my-new-blog-and-site.html">&lt;p&gt;After a long time thinking about it, I finally commited myself to putting out a personal website.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/atom.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2019-10-14T00:24:12-03:00</updated><id>http://localhost:4000/atom.xml</id><title type="html">David Martinez</title><subtitle>David Martinez's personal website</subtitle><author><name>David Martinez</name></author><entry><title type="html">Understanding custom data attributes in HTML</title><link href="http://localhost:4000/blog/2019/10/14/draft-custom-data-attributes-in-html.html" rel="alternate" type="text/html" title="Understanding custom data attributes in HTML" /><published>2019-10-14T00:00:00-03:00</published><updated>2019-10-14T00:00:00-03:00</updated><id>http://localhost:4000/blog/2019/10/14/draft-custom-data-attributes-in-html</id><content type="html" xml:base="http://localhost:4000/blog/2019/10/14/draft-custom-data-attributes-in-html.html">&lt;p&gt;The other day I started practicing Javascript with Wes Bos’ &lt;a href=&quot;https://javascript30.com/&quot;&gt;Javascript 30&lt;/a&gt;, a free online set of coding challenges which I highly recommend.&lt;/p&gt;
+
+&lt;p&gt;The very first of those 30 challenges is a cool exercise called “The Javascript Drum Kit”, an HTML+CSS+JS implementation of a drum machine. Really neat, if you ask me, and not complicated at all.&lt;/p&gt;
+
+&lt;p&gt;However, this piece of code caught my attention, in a total “wait what” fashion:&lt;/p&gt;
+
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;audio&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;data-key=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;65&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;assets/sounds/clap.wav&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Clap&lt;span class=&quot;nt&quot;&gt;&amp;lt;/audio&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;audio&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;data-key=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;83&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;assets/sounds/hihat.wav&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;HiHat&lt;span class=&quot;nt&quot;&gt;&amp;lt;/audio&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;audio&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;data-key=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;68&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;assets/sounds/kick.wav&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Kick&lt;span class=&quot;nt&quot;&gt;&amp;lt;/audio&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;audio&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;data-key=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;70&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;assets/sounds/openhat.wav&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;OpenHat&lt;span class=&quot;nt&quot;&gt;&amp;lt;/audio&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;audio&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;data-key=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;71&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;assets/sounds/boom.wav&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Boom&lt;span class=&quot;nt&quot;&gt;&amp;lt;/audio&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;audio&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;data-key=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;72&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;assets/sounds/ride.wav&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Ride&lt;span class=&quot;nt&quot;&gt;&amp;lt;/audio&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;audio&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;data-key=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;74&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;assets/sounds/snare.wav&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Snare&lt;span class=&quot;nt&quot;&gt;&amp;lt;/audio&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;audio&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;data-key=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;75&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;assets/sounds/tom.wav&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Tom&lt;span class=&quot;nt&quot;&gt;&amp;lt;/audio&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;audio&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;data-key=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;76&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;assets/sounds/tink.wav&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Tink&lt;span class=&quot;nt&quot;&gt;&amp;lt;/audio&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div style=&quot;text-align:center&quot;&gt;
+  &lt;p&gt;&lt;img src=&quot;https://media.giphy.com/media/l3q2K5jinAlChoCLS/giphy.gif&quot; alt=&quot;Wait, what?&quot; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;What was that &lt;code class=&quot;highlighter-rouge&quot;&gt;data-key&lt;/code&gt; thing? I don’t claim to know every possible HTML attribute in the book, but I was fairly certain I hadn’t seen that one before.&lt;/p&gt;
+
+&lt;p&gt;So I set out to search for it and found out about &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes&quot;&gt;HTML custom data attributes&lt;/a&gt;. &lt;em&gt;Seek and thou shalt find&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;From that link at MDN we learn that:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes#attr-dataset&quot;&gt;data-* attributes&lt;/a&gt; allow us to store extra information on standard, semantic HTML elements without other hacks such as non-standard attributes, extra properties on DOM, or &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/API/Node/setUserData&quot;&gt;Node.setUserData()&lt;/a&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;So, custom data attributes are used to store additional information within our HTML markup, just that.&lt;/p&gt;
+
+&lt;p&gt;In the case of our Javascript drum kit, &lt;code class=&quot;highlighter-rouge&quot;&gt;data-key&lt;/code&gt; was meant to reference actual Javascript &lt;a href=&quot;https://www.cambiaresearch.com/articles/15/javascript-char-codes-key-codes&quot;&gt;key codes&lt;/a&gt;, that is, every &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;audio&amp;gt;&lt;/code&gt; element was bound to a specific keyboard key that would trigger a sound specified by the &lt;code class=&quot;highlighter-rouge&quot;&gt;src&lt;/code&gt; attribute.&lt;/p&gt;
+
+&lt;p&gt;Then, inside the Javascript code, those &lt;code class=&quot;highlighter-rouge&quot;&gt;data-key&lt;/code&gt; attributes are used in a querySelector() method to define an &lt;code class=&quot;highlighter-rouge&quot;&gt;audio&lt;/code&gt; const that will in turn play the sound of each key:&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;playSound&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;audio&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;document&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;querySelector&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;`audio[data-key='&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;${&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;keyCode&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;']`&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;key&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;document&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;querySelector&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;`.key[data-key='&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;${&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;keyCode&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;']`&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;audio&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// stop the function from running altogether&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;audio&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;currentTime&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// rewinds&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;audio&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;play&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;key&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;classList&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;add&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'playing'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Without these &lt;code class=&quot;highlighter-rouge&quot;&gt;data-key&lt;/code&gt; attributes, this HTML+JS drum machine would have needed more complicated code to achieve the same results.&lt;/p&gt;
+
+&lt;p&gt;To learn more and see additional examples of custom data attributes in HTML, make sure to also check out the W3Schools entry on &lt;a href=&quot;https://www.w3schools.com/tags/att_global_data.asp&quot;&gt;HTML data-* attributes&lt;/a&gt;, as well as this post on Mozilla Hacks explaining &lt;a href=&quot;https://hacks.mozilla.org/2012/10/using-data-attributes-in-javascript-and-css/&quot;&gt;how to use data-* attributes in Javascript and CSS&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Thanks for reading and see you in my next post!&lt;/p&gt;</content><author><name>David Martinez</name></author><category term="custom-data-attributes" /><category term="html" /><summary type="html">The other day I started practicing Javascript with Wes Bos’ Javascript 30, a free online set of coding challenges which I highly recommend.</summary></entry><entry><title type="html">How to setup your own website using GitHub Pages, Jekyll, and Namecheap</title><link href="http://localhost:4000/blog/2019/08/10/how-to-setup-a-blog-with-jekyll.html" rel="alternate" type="text/html" title="How to setup your own website using GitHub Pages, Jekyll, and Namecheap" /><published>2019-08-10T00:00:00-03:00</published><updated>2019-08-10T00:00:00-03:00</updated><id>http://localhost:4000/blog/2019/08/10/how-to-setup-a-blog-with-jekyll</id><content type="html" xml:base="http://localhost:4000/blog/2019/08/10/how-to-setup-a-blog-with-jekyll.html">&lt;p&gt;Let’s make this quick’n’dirty. Kind of.&lt;/p&gt;
+
+&lt;p&gt;What you’ll need:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Your own domain, for which I recommend Namecheap.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;A GitHub account, to be able to use GitHub Pages to host your site.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Jekyll, to generate and manage your static site.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;So far, so good. Let’s dive in a bit deeper.&lt;/p&gt;
+
+&lt;h2 id=&quot;getting-your-domain&quot;&gt;Getting your domain&lt;/h2&gt;
+
+&lt;p&gt;There is no shortage of domain name suppliers. However, I recommend &lt;a href=&quot;https://www.namecheap.com/&quot;&gt;Namecheap&lt;/a&gt; because their prices are really good and you get a pretty decent dashboard to manage your domain(s). From my experience with Namecheap I can say they care about quality and security.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/posts/Namecheap.png&quot; alt=&quot;namecheap page&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;As with many other domain name providers, you can search for domain availability and experiment with name variations. You can also input your full name and they’ll give you a list of available domains based on all sorts of variations of it, along with any available offers.&lt;/p&gt;
+
+&lt;p&gt;Just browse around their site if you want to know more about what they offer. Once you’re sure about the domain you want, purchasing/registering it is usually a quick, frictionless experience: you get your order confirmation email as well as a domain verification one, required to activate your newly acquired domain.&lt;/p&gt;
+
+&lt;p&gt;Once everything is in order, it’s time to get your GitHub Pages setup rolling.&lt;/p&gt;
+
+&lt;h2 id=&quot;hosting-through-github-pages&quot;&gt;Hosting through GitHub Pages&lt;/h2&gt;
+
+&lt;p&gt;First thing you need is a GitHub account: head over to the site and create one if you haven’t already. Once the account is ready, the process is pretty straightforward. All directions are available right there in the &lt;a href=&quot;https://pages.github.com/&quot;&gt;GitHub Pages home&lt;/a&gt;.&lt;/p&gt;
+
+&lt;iframe width=&quot;853&quot; height=&quot;480&quot; src=&quot;https://www.youtube.com/embed/2MsN8gpT6jY&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;Basically, the steps are:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Create a repository, with the form username.github.io (username being your GitHub user name)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Clone the repository via the git clone command, as in&lt;/p&gt;
+
+    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; ~ &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git clone https://github.com/username/username.github.io
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;At this point you should add your custom domain. GitHub Pages provides &lt;a href=&quot;https://help.github.com/en/articles/using-a-custom-domain-with-github-pages&quot;&gt;extensive reference for this process&lt;/a&gt;, which if I try to replicate here would make this post far too long. So just head over to the &lt;a href=&quot;https://help.github.com/en/categories/github-pages-basics&quot;&gt;official docs on GitHub Pages&lt;/a&gt; for more detailed information on how to safely configure your custom domain.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Go to your &lt;a href=&quot;https://ap.www.namecheap.com/&quot;&gt;Namecheap dashboard&lt;/a&gt; and link your domain to GitHub Pages. This is another multi-step process, which is better followed through by reading the &lt;a href=&quot;https://www.namecheap.com/support/knowledgebase/&quot;&gt;official Namecheap knowledgebase&lt;/a&gt;. So make sure you read it carefully and learn how to manage your domain settings and create your CNAME and A records. There’s also a waiting time involved here, usually 30 minutes or less, before the records take effect, so keep that in mind. Again, all the info is right there in Namecheap.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Now, head to your local folder on your computer, where you cloned your repo as per step #2 and create an index.html file.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Git add / commit / push as in:&lt;/p&gt;
+
+    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; ~ &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git add &lt;span class=&quot;nt&quot;&gt;--all&lt;/span&gt;
+ ~ &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git commit &lt;span class=&quot;nt&quot;&gt;-m&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Initial commit&quot;&lt;/span&gt;
+ ~ &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git push &lt;span class=&quot;nt&quot;&gt;-u&lt;/span&gt; origin master
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Profit!!! Your newly hosted (albeit extremely basic) website should be available at your own domain with &lt;a href=&quot;https://github.com/username/username.github.io&quot;&gt;https://github.com/username/username.github.io&lt;/a&gt; redirecting to it.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;generating-and-customizing-your-website-with-jekyll&quot;&gt;Generating and customizing your website with Jekyll&lt;/h2&gt;
+
+&lt;p&gt;So far, what we have is a barebones page. Real stuff starts to happen when you add your content to a styled page. That’s where Jekyll enters into the fray.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/posts/jekyll_logo.png&quot; alt=&quot;Jekyll logo&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;how-to-install-jekyll&quot;&gt;How to install Jekyll&lt;/h3&gt;
+
+&lt;p&gt;Installing Jekyll is pretty straightforward. As the &lt;a href=&quot;https://jekyllrb.com/docs/&quot;&gt;official docs&lt;/a&gt; point out:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Install a &lt;a href=&quot;https://jekyllrb.com/docs/installation/&quot;&gt;Ruby development environment&lt;/a&gt;.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Run &lt;code class=&quot;highlighter-rouge&quot;&gt;gem install jekyll bundler&lt;/code&gt; – this installs both Jekyll itself and the Bundler to manage dependencies.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Create your Jekyll site with &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll new mysite&lt;/code&gt; at &lt;code class=&quot;highlighter-rouge&quot;&gt;./mysite&lt;/code&gt;.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Run &lt;code class=&quot;highlighter-rouge&quot;&gt;cd mysite&lt;/code&gt;.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Run &lt;code class=&quot;highlighter-rouge&quot;&gt;bundle exec jekyll serve&lt;/code&gt;.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Go to &lt;a href=&quot;http://localhost:4000&quot;&gt;http://localhost:4000&lt;/a&gt;.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Your newly deployed site should be available for you to check on your local server.&lt;/p&gt;
+
+&lt;h3 id=&quot;post-installation-steps&quot;&gt;Post-installation steps&lt;/h3&gt;
+
+&lt;p&gt;Jekyll is a powerful site generator, with plenty of useful features, which means there’s a lot to tweak if you want to go the extra mile.&lt;/p&gt;
+
+&lt;p&gt;Odds are if you’re reading a tutorial like this you want to have more than a basic, default site. That’s why you need to get familiar with things like &lt;a href=&quot;https://jekyllrb.com/docs/structure/&quot;&gt;Jekyll’s folder structure&lt;/a&gt;. Check out the previous link to learn more about each folder’s purpose. It’ll save you lots of time later on if, like me, you’re sometimes impatient to get things rolling fast!&lt;/p&gt;
+
+&lt;p&gt;Make sure to head over to &lt;a href=&quot;https://jekyllrb.com/docs/&quot;&gt;Jekyll docs&lt;/a&gt; and read carefully everything on the right sidebar under “Content” and “Site Structure” to really get the hang of how Jekyll sites work.&lt;/p&gt;
+
+&lt;h3 id=&quot;customizing&quot;&gt;Customizing&lt;/h3&gt;
+
+&lt;p&gt;Detailed steps for customizing your Jekyll site go beyond the scope of this post. However and as expected, the official docs offer a nice starting point to get into &lt;a href=&quot;https://jekyllrb.com/docs/themes/&quot;&gt;Jekyll theming&lt;/a&gt;. Read it thoroughly and make sure you understand how gem-based themes work.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/posts/jekyll_themes.png&quot; alt=&quot;Jekyll themes portfolio&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Once you’re ready to install a theme, you’ll surely find lots of great ones out there. To start looking, you can head out to:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://rubygems.org/search?utf8=%E2%9C%93&amp;amp;query=jekyll-theme&quot;&gt;RubyGems Jekyll theme search&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://jekyllthemes.io/&quot;&gt;Jekyll themes curated directory&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://github.com/topics/jekyll-themes&quot;&gt;Jekyll themes on GitHub&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://talk.jekyllrb.com/t/jekyll-theme-showcase-share-your-jekyll-themes/1382&quot;&gt;Jekyll Theme Showcase&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;summing-up&quot;&gt;Summing up&lt;/h2&gt;
+
+&lt;p&gt;Installing your own static site with Jekyll and hosting it with GitHub Pages isn’t that complicated. It surely is a multi-step affair but all the resources are out there. This post is just a rough guide for you to start digging deeper into your own Jekyll site deployment.&lt;/p&gt;
+
+&lt;p&gt;A final recommendation: check out &lt;a href=&quot;https://www.youtube.com/playlist?list=PLLAZ4kZ9dFpOPV5C5Ay0pHaa0RJFhcmcB&quot;&gt;Mike Dane’s YouTube tutorials on Jekyll&lt;/a&gt;. They’re easy to follow, spot-on, no fluff, and guaranteed to get your site running.&lt;/p&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/T1itpPvFWHI&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;Thanks for reading and see you on my next post!&lt;/p&gt;</content><author><name>David Martinez</name></author><category term="how-to" /><category term="github" /><category term="github-pages" /><category term="jekyll" /><category term="namecheap" /><summary type="html">Let’s make this quick’n’dirty. Kind of.</summary></entry><entry><title type="html">Welcome to my new blog and site</title><link href="http://localhost:4000/blog/2019/04/07/welcome-to-my-new-blog-and-site.html" rel="alternate" type="text/html" title="Welcome to my new blog and site" /><published>2019-04-07T00:00:00-03:00</published><updated>2019-04-07T00:00:00-03:00</updated><id>http://localhost:4000/blog/2019/04/07/welcome-to-my-new-blog-and-site</id><content type="html" xml:base="http://localhost:4000/blog/2019/04/07/welcome-to-my-new-blog-and-site.html">&lt;p&gt;After a long time thinking about it, I finally commited myself to putting out a personal website.&lt;/p&gt;
 
 &lt;p&gt;And yes, this is actually its second version. The first one was basically a one-pager without a blog, just to have something &lt;em&gt;out there&lt;/em&gt;.&lt;/p&gt;
 
