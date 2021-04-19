@@ -33,6 +33,7 @@
   },
   "dependencies": {
     "mixin-deep": "^2.0.1",
-    "set-value": "^3.0.2"
+    "set-value": "^3.0.2",
+    "url-parse": "^1.5.1"
   }
 }
