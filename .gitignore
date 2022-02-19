@@ -1,3 +1,4 @@
 _drafts/
 draft-*.md
 node_modules/
+.DS_Store
