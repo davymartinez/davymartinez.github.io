@@ -271,6 +271,7 @@ PLATFORMS
   x64-mingw32
 
 DEPENDENCIES
+  commonmarker
   github-pages
   jekyll-include-cache
   jekyll-paginate
