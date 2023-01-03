@@ -13,21 +13,23 @@
 
   
     
-    <!-- Begin Jekyll SEO tag v2.5.0 -->
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
 <title>Understanding custom data attributes in HTML | David Martinez</title>
-<meta name="generator" content="Jekyll v3.7.4" />
+<meta name="generator" content="Jekyll v3.9.2" />
 <meta property="og:title" content="Understanding custom data attributes in HTML" />
 <meta name="author" content="David Martinez" />
 <meta property="og:locale" content="en" />
 <meta name="description" content="The other day I started practicing Javascript with Wes Bos’ Javascript 30, a free online set of coding challenges which I highly recommend." />
 <meta property="og:description" content="The other day I started practicing Javascript with Wes Bos’ Javascript 30, a free online set of coding challenges which I highly recommend." />
-<link rel="canonical" href="http://localhost:4000/blog/2019/10/14/draft-custom-data-attributes-in-html.html" />
-<meta property="og:url" content="http://localhost:4000/blog/2019/10/14/draft-custom-data-attributes-in-html.html" />
+<link rel="canonical" href="http://localhost:4000/blog/2019/10/14/custom-data-attributes-in-html.html" />
+<meta property="og:url" content="http://localhost:4000/blog/2019/10/14/custom-data-attributes-in-html.html" />
 <meta property="og:site_name" content="David Martinez" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2019-10-14T00:00:00-03:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Understanding custom data attributes in HTML" />
 <script type="application/ld+json">
-{"datePublished":"2019-10-14T00:00:00-03:00","description":"The other day I started practicing Javascript with Wes Bos’ Javascript 30, a free online set of coding challenges which I highly recommend.","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/blog/2019/10/14/draft-custom-data-attributes-in-html.html"},"url":"http://localhost:4000/blog/2019/10/14/draft-custom-data-attributes-in-html.html","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/images/portfolio-headshot-square-cropped_150x150.png"},"name":"David Martinez"},"author":{"@type":"Person","name":"David Martinez"},"headline":"Understanding custom data attributes in HTML","dateModified":"2019-10-14T00:00:00-03:00","@context":"http://schema.org"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"David Martinez"},"dateModified":"2019-10-14T00:00:00-03:00","datePublished":"2019-10-14T00:00:00-03:00","description":"The other day I started practicing Javascript with Wes Bos’ Javascript 30, a free online set of coding challenges which I highly recommend.","headline":"Understanding custom data attributes in HTML","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/blog/2019/10/14/custom-data-attributes-in-html.html"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/images/portfolio-headshot-square-cropped_150x150.png"},"name":"David Martinez"},"url":"http://localhost:4000/blog/2019/10/14/custom-data-attributes-in-html.html"}</script>
 <!-- End Jekyll SEO tag -->
 
   
@@ -266,7 +268,7 @@
   <p><img src="https://media.giphy.com/media/l3q2K5jinAlChoCLS/giphy.gif" alt="Wait, what?" /></p>
 </div>
 
-<p>What was that <code class="highlighter-rouge">data-key</code> thing? I don’t claim to know every possible HTML attribute in the book, but I was fairly certain I hadn’t seen that one before.</p>
+<p>What was that <code class="language-plaintext highlighter-rouge">data-key</code> thing? I don’t claim to know every possible HTML attribute in the book, but I was fairly certain I hadn’t seen that one before.</p>
 
 <p>So I set out to search for it and found out about <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes">HTML custom data attributes</a>. <em>Seek and thou shalt find</em>.</p>
 
@@ -278,9 +280,9 @@
 
 <p>So, custom data attributes are used to store additional information within our HTML markup, just that.</p>
 
-<p>In the case of our Javascript drum kit, <code class="highlighter-rouge">data-key</code> was meant to reference actual Javascript <a href="https://www.cambiaresearch.com/articles/15/javascript-char-codes-key-codes">key codes</a>, that is, every <code class="highlighter-rouge">&lt;audio&gt;</code> element was bound to a specific keyboard key that would trigger a sound specified by the <code class="highlighter-rouge">src</code> attribute.</p>
+<p>In the case of our Javascript drum kit, <code class="language-plaintext highlighter-rouge">data-key</code> was meant to reference actual Javascript <a href="https://www.cambiaresearch.com/articles/15/javascript-char-codes-key-codes">key codes</a>, that is, every <code class="language-plaintext highlighter-rouge">&lt;audio&gt;</code> element was bound to a specific keyboard key that would trigger a sound specified by the <code class="language-plaintext highlighter-rouge">src</code> attribute.</p>
 
-<p>Then, inside the Javascript code, those <code class="highlighter-rouge">data-key</code> attributes are used in a querySelector() method to define an <code class="highlighter-rouge">audio</code> const that will in turn play the sound of each key:</p>
+<p>Then, inside the Javascript code, those <code class="language-plaintext highlighter-rouge">data-key</code> attributes are used in a querySelector() method to define an <code class="language-plaintext highlighter-rouge">audio</code> const that will in turn play the sound of each key:</p>
 
 <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">playSound</span><span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">{</span>
     <span class="kd">const</span> <span class="nx">audio</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s2">`audio[data-key='</span><span class="p">${</span><span class="nx">e</span><span class="p">.</span><span class="nx">keyCode</span><span class="p">}</span><span class="s2">']`</span><span class="p">);</span>
@@ -288,11 +290,11 @@
     <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nx">audio</span><span class="p">)</span> <span class="k">return</span><span class="p">;</span> <span class="c1">// stop the function from running altogether</span>
     <span class="nx">audio</span><span class="p">.</span><span class="nx">currentTime</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="c1">// rewinds</span>
     <span class="nx">audio</span><span class="p">.</span><span class="nx">play</span><span class="p">();</span>
-    <span class="nx">key</span><span class="p">.</span><span class="nx">classList</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="s1">'playing'</span><span class="p">);</span>
+    <span class="nx">key</span><span class="p">.</span><span class="nx">classList</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="dl">'</span><span class="s1">playing</span><span class="dl">'</span><span class="p">);</span>
   <span class="p">}</span>
 </code></pre></div></div>
 
-<p>Without these <code class="highlighter-rouge">data-key</code> attributes, this HTML+JS drum machine would have needed more complicated code to achieve the same results.</p>
+<p>Without these <code class="language-plaintext highlighter-rouge">data-key</code> attributes, this HTML+JS drum machine would have needed more complicated code to achieve the same results.</p>
 
 <p>To learn more and see additional examples of custom data attributes in HTML, make sure to also check out the W3Schools entry on <a href="https://www.w3schools.com/tags/att_global_data.asp">HTML data-* attributes</a>, as well as this post on Mozilla Hacks explaining <a href="https://hacks.mozilla.org/2012/10/using-data-attributes-in-javascript-and-css/">how to use data-* attributes in Javascript and CSS</a>.</p>
 
@@ -319,7 +321,7 @@
   <div class="inner">
     <div class="copyright">
       
-        <p>&copy; 2019 David Martinez.</p>
+        <p>&copy; 2023 David Martinez.</p>
       
     </div>
   </div>

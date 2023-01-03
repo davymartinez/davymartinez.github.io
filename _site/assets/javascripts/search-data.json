@@ -4,11 +4,6 @@ var store = [{
         "tags": ["content","welcome","personal"],
         "url": "http://localhost:4000/blog/2019/04/07/welcome-to-my-new-blog-and-site.html"
       },{
-        "title": "Draft Regular Expressions And Spinal Tap Case",
-        "excerpt":"","categories": [],
-        "tags": [],
-        "url": "http://localhost:4000/2019/04/13/draft-regular-expressions-and-spinal-tap-case.html"
-      },{
         "title": "How to setup your own website using GitHub Pages, Jekyll, and Namecheap",
         "excerpt":"Let’s make this quick’n’dirty. Kind of. What you’ll need: Your own domain, for which I recommend Namecheap. A GitHub account, to be able to use GitHub Pages to host your site. Jekyll, to generate and manage your static site. So far, so good. Let’s dive in a bit deeper. Getting...","categories": ["blog"],
         "tags": ["how-to","github","github-pages","jekyll","namecheap"],
@@ -17,7 +12,12 @@ var store = [{
         "title": "Understanding custom data attributes in HTML",
         "excerpt":"The other day I started practicing Javascript with Wes Bos’ Javascript 30, a free online set of coding challenges which I highly recommend. The very first of those 30 challenges is a cool exercise called “The Javascript Drum Kit”, an HTML+CSS+JS implementation of a drum machine. Really neat, if you...","categories": ["blog"],
         "tags": ["custom-data-attributes","html"],
-        "url": "http://localhost:4000/blog/2019/10/14/draft-custom-data-attributes-in-html.html"
+        "url": "http://localhost:4000/blog/2019/10/14/custom-data-attributes-in-html.html"
+      },{
+        "title": "El Mundo Despues Del Coronavirus",
+        "excerpt":"Yuval Noah Harari: El mundo después del coronavirus Esta tormenta pasará. Pero lo que elijamos hacer ahora podría cambiar nuestras vidas en los años por venir Esta es una traducción de un artículo originalmente publicado por el autor Yuval Noah Harari en Financial Times. La humanidad se está enfrentando a...","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/2020/03/24/el-mundo-despues-del-coronavirus.html"
       },{
         "title": "Personal Portfolio Page",
         "excerpt":"This was the first version of the website you’re seeing right now. It started as a freeCodeCamp project and it was actually the first iteration of www.davymartinez.com. It required using elements such as: A welcome section (whose height should be equal to the viewport’s height) A projects section Project tiles...","categories": [],
