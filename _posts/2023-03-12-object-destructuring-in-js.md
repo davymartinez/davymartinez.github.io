@@ -1,5 +1,5 @@
 ---
-title: "Understanding object destructuring in JavaScript with four easy, short examples"
+title: "Understanding object destructuring in JavaScript with five easy, short examples"
 categories:
     - blog
 tags:
