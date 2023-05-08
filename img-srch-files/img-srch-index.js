@@ -11,7 +11,14 @@ function generateAlbumHtml(album, list) {
         <div id="album-item-container">
             <div id="album-item">
                 <div id="album-artwork-container">
-                    <a href="${largeArtWork}" target="_blank"><img src="${largeArtWork}" id="album-artwork"></a>
+                    <a href="${largeArtWork}" target="_blank">
+                        <img 
+                            src="${largeArtWork}" 
+                            id="album-artwork" 
+                            alt="Click on the image to open it in another tab and then download it"
+                            title="Click on the image to open it in another tab and then download it"
+                        >
+                    </a>
                 </div>
                 <div id="album-info-container">
                     <h2 id="album-title"><span id="album-title-key"></span> ${album.collectionName}</h2>
