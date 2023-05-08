@@ -1,0 +1,185 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+header {
+    background-color: #263849;
+    color: #acf8e1;
+    padding: 5px;
+    text-align: center;
+}
+
+#search-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    margin: 20px;
+}
+input[type="text"] {
+    padding: 10px 35px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    flex-grow: 1;
+    min-width: 200px;
+}
+input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #35bcbf;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-icon {
+    background-image: url(/img/search-icon.png);
+    background-repeat: no-repeat;
+    background-position: 10px 12px;
+}
+
+#search-btn {
+    width: 120px;
+    background-color: #35bcbf;
+    border: none;
+}
+
+#header-h1 {
+    font-weight: 800;
+}
+
+#header-p, #empty-state-p {
+    font-weight: 700;
+}
+
+#header-p {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#empty-state-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    margin-top: 20px;
+}
+
+#empty-state-p {
+    color: #2e2e2f;
+    font-size: 20px;
+}
+
+#container {
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    margin: 20px;
+}
+
+#album-list {
+    display: flex;
+    justify-content: center;
+    color: #90f6d7;
+}
+
+#album-item-container {
+    display: flex;
+    flex-direction: column;
+    margin: 40px 44px 0;
+    background-color: #263849;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+#album-item {
+    display: flex;
+}
+
+#album-artwork-container {
+    margin-right: 10px;
+}
+
+#album-artwork {
+    width: 500px;
+}
+
+#album-info-container {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    margin-left: 40px;
+    font-size: xx-large;
+}
+
+#album-info-container > h2 {
+    font-size: xxx-large;
+}
+
+#album-artist {
+    font-weight: bold;
+}
+
+#album-title-key {
+    font-weight: 100;
+}
+
+#album-artist-key {
+    font-weight: 100;
+}
+
+#no-results-msg-p {
+    color: #787878;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+#no-results-msg {
+    display: flex;
+    text-align: center;
+    margin-top: 40%;
+}
+
+#plus-icon {
+    width: 18px;
+    height: 18px;
+    margin-right: 4px;
+}
+
+#album-cover-icon {
+    width: 100px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2em;
+}
+
+#footer-p,
+#footer-link {
+    font-size: small;
+    text-align: center;
+    line-height: 0.5em;
+}
+
+@media screen and (max-width: 768px) {
+    form {
+        flex-direction: column;
+    }
+    input[type="text"] {
+        margin-bottom: 10px;
+        min-width: 100%;
+    }
+    .album-item {
+        width: 100%;
+        height: auto;
+    }
+}

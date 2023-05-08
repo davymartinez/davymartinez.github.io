@@ -8,7 +8,7 @@ author:
 
 Hi there again.
 
-I'm a life-long learner. My current focus is on web development and I'm taking a self-learning path on [freeCodeCamp](https://www.freecodecamp.org) to become a front-end web developer.
+I'm a life-long learner. My current focus is on web development and I'm taking a self-learning frontend career path on [Scrimba](https://www.scrimba.com) to become a frontend web developer.
 
 For a little over 25 years now I've been working on industries as diverse as radio, translation, oil & gas, digital marketing, and entertainment technology & data.
 
@@ -20,8 +20,6 @@ A few of my professional highlights include:
 * Practical experience in blogging and content marketing.
 * Currently, I work full-time as a Senior Music Metadata Editor for a leading entertainment data and technology company. My specialty: Latin American music!
 
-If you're interested in English-to-Spanish translation services:
-
-<a href="https://us.smartcat.ai/marketplace/user/david-martinez?utm_source=hireme&utm_medium=referral&utm_campaign=hireme-{SmartcatEmail}" target="_blank"><img src="https://portal-custom-assets.smartcat.ai/hire_me_via_smartcat_btn_light_theme.png" alt="" width="282" height="48"></a>
+If you're interested in English-to-Spanish translation services you can [hire me at Gengo.com](https://gengo.com/hire/profile/117607).
 
 You can always check the [CV section](cv.html), where I have included a detailed listing of my work experience in the past 20 years or so.

@@ -14,10 +14,10 @@ var store = [{
         "tags": ["custom-data-attributes","html"],
         "url": "http://localhost:4000/blog/2019/10/14/custom-data-attributes-in-html.html",
         "teaser":null},{
-        "title": "El Mundo Despues Del Coronavirus",
-        "excerpt":"Yuval Noah Harari: El mundo después del coronavirus Esta tormenta pasará. Pero lo que elijamos hacer ahora podría cambiar nuestras vidas en los años por venir Esta es una traducción de un artículo originalmente publicado por el autor Yuval Noah Harari en Financial Times. La humanidad se está enfrentando a...","categories": [],
-        "tags": [],
-        "url": "http://localhost:4000/2020/03/24/el-mundo-despues-del-coronavirus.html",
+        "title": "Understanding object destructuring in JavaScript with five easy, short examples",
+        "excerpt":"When you’re learning front-end development with JavaScript, your first encounters with the concept of “object destructuring” might be a bit confusing. The term itself might look intimidating, but it really isn’t hard to grasp as it’s actually meant to make life easier for developers. In short, destructuring is a technique...","categories": ["blog"],
+        "tags": ["object-destructuring","javascript"],
+        "url": "http://localhost:4000/blog/2023/03/12/object-destructuring-in-js.html",
         "teaser":null},{
         "title": "Personal Portfolio Page",
         "excerpt":"This was the first version of the website you’re seeing right now. It started as a freeCodeCamp project and it was actually the first iteration of www.davymartinez.com. It required using elements such as: A welcome section (whose height should be equal to the viewport’s height) A projects section Project tiles...","categories": [],
