@@ -116,11 +116,15 @@ input[type="submit"] {
     flex-direction: column;
     align-self: center;
     margin-left: 40px;
-    font-size: xx-large;
 }
 
 #album-info-container > h2 {
-    font-size: xxx-large;
+    font-size: 3vw;
+}
+
+#album-info-container > p {
+    font-size: 2vw;
+    margin-bottom: 0;
 }
 
 #album-artist {
@@ -170,16 +174,34 @@ footer {
     line-height: 0.5em;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
     form {
         flex-direction: column;
     }
     input[type="text"] {
         margin-bottom: 10px;
-        min-width: 100%;
     }
     .album-item {
         width: 100%;
         height: auto;
+    }
+    #album-item-container {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    #album-info-container {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+@media screen and (max-width: 428px) {
+    #album-item-container {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    #album-info-container {
+        margin-left: 10px;
+        margin-right: 10px;
     }
 }

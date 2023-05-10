@@ -38,8 +38,6 @@ function fetchSearch(title) {
         .then(data => {
             let searchResults = data.results
 
-            console.log(data.results)
-
             if (searchResults === undefined) {
                 albumList.innerHTML = `
                     <div id="no-results-msg">
