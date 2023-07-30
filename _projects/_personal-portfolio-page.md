@@ -7,7 +7,7 @@ image:
 ---
 This was the first version of the website you're seeing right now.
 
-It started as a freeCodeCamp project and it was actually the first iteration of www.davymartinez.com. It required using elements such as:
+It started as a freeCodeCamp project and it was actually the first iteration of [davymartinez.com](https://davymartinez.com). It required using elements such as:
 
 * A welcome section (whose height should be equal to the viewport's height)
 * A projects section
