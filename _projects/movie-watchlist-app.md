@@ -14,4 +14,6 @@ The project was part of Scrimba's Working with APIs module off the Frontend Care
 * The `.then()` method
 * Local storage
 
+The app is deployed in [Netlify](https://dm-movie-watchlist.netlify.app/).
+
 You can check the code out at [GitHub](https://github.com/davymartinez/Scrimba-frontend-path-projects/tree/main/mod09-working-with-apis/02-solo-project-movie-watchlist).

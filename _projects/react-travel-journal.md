@@ -15,4 +15,6 @@ This project was intended to start working with:
 * Rendering those elements
 * Vite
 
+The journal is deployed in [Netlify](https://dm-react-travel-journal.netlify.app/).
+
 You can check the code out at [GitHub](https://github.com/davymartinez/react-basics-travel-journal).

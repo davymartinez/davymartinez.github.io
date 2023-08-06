@@ -15,4 +15,6 @@ It's fully functional and you get two passwords for the price of one: free. The 
 * How to copy text via the Clipboard API
 * CSS media queries
 
+Check the generator in [Netlify](https://dm-random-password-generator.netlify.app/).
+
 You can check the code out at [GitHub](https://github.com/davymartinez/Scrimba-frontend-path-projects/tree/main/mod03-making-websites-interactive/04-password-generator).

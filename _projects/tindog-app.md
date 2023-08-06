@@ -14,4 +14,6 @@ The main purpose of this project was to put into practice concepts such as:
 * The `this` keyword
 * Event listeners
 
+The app is hosted in [Netlify](https://dm-tindog-app.netlify.app/).
+
 You can check the code out at [GitHub](https://github.com/davymartinez/Scrimba-frontend-path-projects/tree/main/mod07-next-level-js/02-solo-project-tindog).

@@ -14,4 +14,6 @@ The project was part of Scrimba's Working with APIs module off the Frontend Care
 * The `.then()` method
 * The `<input>`, `<select>`, and `<option>` tags for drop-down menus
 
+The generator is deployed in [Netlify](https://dm-color-scheme-generator.netlify.app/).
+
 You can check the code out at [GitHub](https://github.com/davymartinez/Scrimba-frontend-path-projects/tree/main/mod09-working-with-apis/01-color-scheme-generator).

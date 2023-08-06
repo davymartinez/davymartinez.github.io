@@ -15,4 +15,6 @@ The game uses `Async/Await` promises and features the following tech stack and c
 * ScaleLoader
 * Vite
 
+The game is hosted in [Netlify](https://musiquizzical.netlify.app/).
+
 You can check the code out at [GitHub](https://github.com/davymartinez/react-musiquizzical).

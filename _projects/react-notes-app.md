@@ -14,4 +14,6 @@ This note-taking app features the following tech stack:
 * react-mde
 * Vite
 
+The app is available in [Netlify](https://dm-notes-app.netlify.app/).
+
 You can check the code out at [GitHub](https://github.com/davymartinez/react-notes-app).

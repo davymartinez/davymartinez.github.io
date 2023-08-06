@@ -16,4 +16,6 @@ This game features the following tech stack:
 * nanoid
 * Vite
 
+Check the game at [Netlify](https://dm-tenzies-game.netlify.app/).
+
 You can check the code out at [GitHub](https://github.com/davymartinez/react-tenzies).

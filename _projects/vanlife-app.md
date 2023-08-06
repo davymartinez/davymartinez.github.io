@@ -14,4 +14,6 @@ The app uses the following tech stack and components:
 * Mirage JS
 * Vite
 
+Check the app in [Netlify](https://main--dm-react-vans-page.netlify.app/).
+
 You can check the code out at [GitHub](https://github.com/davymartinez/react-vans-page).

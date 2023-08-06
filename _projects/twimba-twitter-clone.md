@@ -14,4 +14,6 @@ The main focus of this project was to put into practice:
 * Local storage
 * uuidv4
 
+The Twimba clone is available in [Netlify](https://dm-twitter-clone.netlify.app/).
+
 You can check the code out at [GitHub](https://github.com/davymartinez/Scrimba-frontend-path-projects/tree/main/mod05-essential-js-concepts/02-twimba).
